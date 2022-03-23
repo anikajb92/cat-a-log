@@ -19,10 +19,14 @@ class File_Processor
 
   # ACTIVITY METHODS
   def create_file
-    puts 'creating file'
-    cat_file = File.open('Cats.txt', 'a+')
-    puts 'CREATED Cats.txt'
-    log_activity('create_file')
+    if File.exist?('Cats.txt')
+      puts 'Cats.txt file found...'
+    else
+      puts 'creating file'
+      cat_file = File.open('Cats.txt', 'a+')
+      puts 'CREATED Cats.txt'
+      log_activity('create_file')
+    end
   end
 
   def modify_file
