@@ -1,5 +1,5 @@
 class File_Processor
-  def welcome
-    puts 'Welcome to Cat-A-Log'
+  def run_process
+    puts "Running process"
   end
 end
