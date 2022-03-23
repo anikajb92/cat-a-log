@@ -35,6 +35,9 @@ class File_Processor
 
   def delete_file
     puts 'deleting file...'
+    File.delete('Cats.txt')
+    puts 'DELETED Cats.txt'
+    log_activity('delete_file')
   end
 
   # LOG METHODS
