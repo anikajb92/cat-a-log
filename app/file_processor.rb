@@ -9,6 +9,7 @@ class File_Processor
     delete_file
   end
   # GLOBAL VARIABLES
+  $username = `whoami`.chomp! # bash command works here + removing new line
   $cat_file = File.open('Cats.txt', 'a+')
   $log = File.open('Log.json', 'a+')
 
@@ -39,6 +40,7 @@ class File_Processor
   def log_process
     process_info = {
       timestamp: current_time.to_s,
+      username: $username.to_s,
       process_name: 'run_process'
     }
     $log.puts JSON.generate(process_info)
@@ -47,7 +49,8 @@ class File_Processor
   def log_activity(command)
     activity_info = {
       timestamp: current_time.to_s,
-      activity_descriptor: command.to_s
+      activity_descriptor: command.to_s,
+      username: $username.to_s
     }
     $log.puts JSON.generate(activity_info)
     puts "LOGGING #{command}"

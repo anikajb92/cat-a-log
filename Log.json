@@ -14,3 +14,6 @@
 {"timestamp":"03-23-2022 16:58:40","process_name":"run_process"}
 {"timestamp":"03-23-2022 16:58:40","activity_descriptor":"create_file"}
 {"timestamp":"03-23-2022 16:58:42","activity_descriptor":"modify_file"}
+{"timestamp":"03-23-2022 17:03:39","username":"anikabernstein","process_name":"run_process"}
+{"timestamp":"03-23-2022 17:03:39","activity_descriptor":"create_file","username":"anikabernstein"}
+{"timestamp":"03-23-2022 17:03:41","activity_descriptor":"modify_file","username":"anikabernstein"}
