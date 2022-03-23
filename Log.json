@@ -5,3 +5,12 @@
 {"timestamp":"03-23-2022 16:46:24","activity_descriptor":"create_file"}
 {"timestamp":"03-23-2022 16:53:34","process_name":"run_process"}
 {"timestamp":"03-23-2022 16:53:34","activity_descriptor":"create_file"}
+{"timestamp":"03-23-2022 16:55:48","process_name":"run_process"}
+{"timestamp":"03-23-2022 16:55:48","activity_descriptor":"create_file"}
+{"timestamp":"03-23-2022 16:55:48","activity_descriptor":"modify_file"}
+{"timestamp":"03-23-2022 16:56:39","process_name":"run_process"}
+{"timestamp":"03-23-2022 16:56:39","activity_descriptor":"create_file"}
+{"timestamp":"03-23-2022 16:56:41","activity_descriptor":"modify_file"}
+{"timestamp":"03-23-2022 16:58:40","process_name":"run_process"}
+{"timestamp":"03-23-2022 16:58:40","activity_descriptor":"create_file"}
+{"timestamp":"03-23-2022 16:58:42","activity_descriptor":"modify_file"}

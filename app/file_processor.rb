@@ -3,7 +3,9 @@ class File_Processor
     puts 'Running file processor'
     log_process
     create_file
+    sleep 2 # wait 2 seconds
     modify_file
+    sleep 2 # wait 2 more seconds
     delete_file
   end
   # GLOBAL VARIABLES
@@ -24,7 +26,8 @@ class File_Processor
 
   def modify_file
     puts 'modifying file'
-    $cat_file.puts 'Cats are fluffy'
+    $cat_file.puts 'Cats are paws-itively the best'
+    log_activity('modify_file')
     puts 'MODIFIED Cats.txt'
   end
 
