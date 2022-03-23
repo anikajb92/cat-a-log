@@ -17,3 +17,6 @@
 {"timestamp":"03-23-2022 17:03:39","username":"anikabernstein","process_name":"run_process"}
 {"timestamp":"03-23-2022 17:03:39","activity_descriptor":"create_file","username":"anikabernstein"}
 {"timestamp":"03-23-2022 17:03:41","activity_descriptor":"modify_file","username":"anikabernstein"}
+{"timestamp":"03-23-2022 17:06:15","username":"anikabernstein","process_name":"run_process"}
+{"timestamp":"03-23-2022 17:06:15","activity_descriptor":"create_file","username":"anikabernstein","file_path":"/Users/anikabernstein/Desktop/Development/code/tech-assessments/cat-a-log/Cats.txt"}
+{"timestamp":"03-23-2022 17:06:17","activity_descriptor":"modify_file","username":"anikabernstein","file_path":"/Users/anikabernstein/Desktop/Development/code/tech-assessments/cat-a-log/Cats.txt"}
