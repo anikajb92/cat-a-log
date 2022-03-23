@@ -27,3 +27,9 @@
 {"timestamp":"03-23-2022 17:10:41","activity_descriptor":"create_file","username":"anikabernstein","file_path":"/Users/anikabernstein/Desktop/Development/code/tech-assessments/cat-a-log/Cats.txt"}
 {"timestamp":"03-23-2022 17:10:43","activity_descriptor":"modify_file","username":"anikabernstein","file_path":"/Users/anikabernstein/Desktop/Development/code/tech-assessments/cat-a-log/Cats.txt"}
 {"timestamp":"03-23-2022 17:10:45","activity_descriptor":"delete_file","username":"anikabernstein","file_path":"/Users/anikabernstein/Desktop/Development/code/tech-assessments/cat-a-log/Cats.txt"}
+{"timestamp":"03-23-2022 17:14:08","username":"anikabernstein","process_name":"run_process"}
+{"timestamp":"03-23-2022 17:14:08","activity_descriptor":"create_file","username":"anikabernstein","file_path":"/Users/anikabernstein/Desktop/Development/code/tech-assessments/cat-a-log/Cats.txt"}
+{"timestamp":"03-23-2022 17:15:37","username":"anikabernstein","process_name":"run_process"}
+{"timestamp":"03-23-2022 17:15:37","activity_descriptor":"create_file","username":"anikabernstein","file_path":"/Users/anikabernstein/Desktop/Development/code/tech-assessments/cat-a-log/Cats.txt"}
+{"timestamp":"03-23-2022 17:15:39","activity_descriptor":"modify_file","username":"anikabernstein","file_path":"/Users/anikabernstein/Desktop/Development/code/tech-assessments/cat-a-log/Cats.txt"}
+{"timestamp":"03-23-2022 17:15:41","activity_descriptor":"delete_file","username":"anikabernstein","file_path":"/Users/anikabernstein/Desktop/Development/code/tech-assessments/cat-a-log/Cats.txt"}

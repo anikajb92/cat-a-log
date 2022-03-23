@@ -11,7 +11,6 @@ class File_Processor
   # GLOBAL VARIABLES
   $username = `whoami`.chomp! # bash command works here + removing new line
   $path = `realpath Cats.txt`.chomp! # bash command returns absolute file path
-  $cat_file = File.open('Cats.txt', 'a+')
   $log = File.open('Log.json', 'a+')
 
   def current_time
@@ -21,16 +20,16 @@ class File_Processor
   # ACTIVITY METHODS
   def create_file
     puts 'creating file'
-    $cat_file
+    cat_file = File.open('Cats.txt', 'a+')
     puts 'CREATED Cats.txt'
     log_activity('create_file')
   end
 
   def modify_file
     puts 'modifying file'
-    $cat_file.puts 'Cats are paws-itively the best'
-    log_activity('modify_file')
+    File.write('Cats.txt', "You've got to be kitten me", mode: 'a')
     puts 'MODIFIED Cats.txt'
+    log_activity('modify_file')
   end
 
   def delete_file
