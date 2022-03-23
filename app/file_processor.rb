@@ -1,9 +1,14 @@
 class File_Processor
   def run_process
-    puts 'Running process'
+    puts 'Running file processor'
+    log_process
     create_file
     modify_file
     delete_file
+  end
+
+  def current_time
+    time = DateTime.now.strftime('%m-%d-%Y %H:%M:%S')
   end
 
   def create_file
@@ -23,9 +28,18 @@ class File_Processor
     puts 'deleting file...'
   end
 
+  def log_process
+    process_info = {
+      timestamp: current_time.to_s,
+      process_name: 'run_process'
+    }
+    log = File.open('Log.json', 'a+')
+    log.puts JSON.generate(process_info)
+  end
+
   def log_activity(command)
     activity_info = {
-      timestamp: DateTime.now.to_s,
+      timestamp: current_time.to_s,
       activity_descriptor: command.to_s
     }
     log = File.open('Log.json', 'a+')

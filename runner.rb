@@ -7,6 +7,7 @@ def prompt
 end
 
 def initiate
+  system('clear')
   puts 'Welcome to Cat-A-Log'
   consent = prompt.yes?('Would you like to run this program now?')
 

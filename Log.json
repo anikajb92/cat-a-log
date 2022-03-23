@@ -1,2 +1,5 @@
 {"timestamp":"2022-03-23T16:38:51-06:00","activity_descriptor":""}
 {"timestamp":"2022-03-23T16:39:20-06:00","activity_descriptor":"create_file"}
+{"timestamp":"03-23-2022 16:45:32","activity_descriptor":"create_file"}
+{"timestamp":"03-23-2022 16:46:24","process_name":"run_process"}
+{"timestamp":"03-23-2022 16:46:24","activity_descriptor":"create_file"}
