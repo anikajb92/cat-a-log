@@ -10,7 +10,7 @@ class File_Processor
   end
   # GLOBAL VARIABLES
   $username = `whoami`.chomp! # bash command works here + removing new line
-  $path = `realpath Cats.txt`.chomp! # bash command returns absolute file path
+  $absolute_path = File.realdirpath('Cats.txt') # built into Ruby File class
   $log = File.open('Log.json', 'a+')
 
   def current_time
@@ -58,7 +58,7 @@ class File_Processor
       timestamp: current_time.to_s,
       activity_descriptor: command.to_s,
       username: $username.to_s,
-      file_path: $path
+      file_path: $absolute_path
     }
     $log.puts JSON.generate(activity_info)
     puts "LOGGING #{command}"
