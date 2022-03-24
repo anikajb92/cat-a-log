@@ -51,3 +51,12 @@
 {"timestamp":"03-23-2022 17:34:05","activity_descriptor":"create_file","username":"anikabernstein","file_path":"/Users/anikabernstein/Desktop/Development/code/tech-assessments/cat-a-log/Cats.txt","process_id":64644}
 {"timestamp":"03-23-2022 17:34:07","activity_descriptor":"modify_file","username":"anikabernstein","file_path":"/Users/anikabernstein/Desktop/Development/code/tech-assessments/cat-a-log/Cats.txt","process_id":64644}
 {"timestamp":"03-23-2022 17:34:09","activity_descriptor":"delete_file","username":"anikabernstein","file_path":"/Users/anikabernstein/Desktop/Development/code/tech-assessments/cat-a-log/Cats.txt","process_id":64644}
+{"timestamp":"03-23-2022 17:38:46","username":"anikabernstein","process_name":"run_process","process_id":64854}
+{"timestamp":"03-23-2022 17:38:46","activity_descriptor":"create_file","username":"anikabernstein","file_path":"/Users/anikabernstein/Desktop/Development/code/tech-assessments/cat-a-log/Cats.txt","process_id":64854}
+{"timestamp":"03-23-2022 17:39:26","username":"anikabernstein","process_name":"run_process","process_id":64906}
+{"timestamp":"03-23-2022 17:41:44","username":"anikabernstein","process_name":"run_process","process_id":65046}
+{"timestamp":"03-23-2022 17:41:44","activity_descriptor":"create_file","username":"anikabernstein","file_path":"/Users/anikabernstein/Desktop/Development/code/tech-assessments/cat-a-log/Cats.txt","process_id":65046}
+{"timestamp":"03-23-2022 17:41:46","activity_descriptor":"modify_file","username":"anikabernstein","file_path":"/Users/anikabernstein/Desktop/Development/code/tech-assessments/cat-a-log/Cats.txt","process_id":65046}
+{"timestamp":"03-23-2022 17:57:43","username":"anikabernstein","process_name":"run_process","process_id":65209}
+{"timestamp":"03-23-2022 17:41:44","activity_descriptor":"create_file","username":"anikabernstein","file_path":"/Users/anikabernstein/Desktop/Development/code/tech-assessments/cat-a-log/Cats.txt","process_id":65209}
+{"timestamp":"03-23-2022 17:57:45","activity_descriptor":"modify_file","username":"anikabernstein","file_path":"/Users/anikabernstein/Desktop/Development/code/tech-assessments/cat-a-log/Cats.txt","process_id":65209}
