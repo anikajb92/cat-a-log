@@ -38,7 +38,13 @@ class File_Processor
 
   def modify_file
     puts 'modifying file'
-    File.write('Cats.txt', "You've got to be kitten me", mode: 'a')
+    puns = [
+      "You've got to be kitten me",
+      'This looks fur-miliar',
+      "I'm feline good today",
+      'This is Paw-sitively the best update ever'
+    ]
+    File.write('Cats.txt', puns.sample(1), mode: 'a')
     # Ruby method capturing true file modification time rather than method run timestamp
     mod_time = File.mtime('Cats.txt').strftime('%m-%d-%Y %H:%M:%S')
     puts 'MODIFIED Cats.txt'
@@ -104,7 +110,7 @@ class File_Processor
   # TRANSMIT DATA
   def transmit
     log_network
-    Thread.new { `shotgun` }
     $log.flush
+    Thread.new { `shotgun` }
   end
 end
