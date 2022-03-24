@@ -2,6 +2,9 @@ require 'pry'
 require 'json'
 
 class Application
+  info = File.expand_path('/Log.json', __dir__)
+  log = File.read('Log.json')
+
   def call(env)
     resp = Rack::Response.new
     req = Rack::Request.new(env)
@@ -10,6 +13,6 @@ class Application
   end
 
   def index
-    [200, { 'Content-Type' => 'text/plain' }, ['Hello, world']]
+    [200, { 'Content-Type' => 'application/json' }, [@log = File.read('Log.json')]]
   end
 end
