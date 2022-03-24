@@ -7,6 +7,7 @@ class File_Processor
     modify_file
     sleep 2 # wait 2 more seconds
     delete_file
+    transmit
   end
 
   # GLOBAL VARIABLES
@@ -80,5 +81,30 @@ class File_Processor
     }
     $log.puts JSON.generate(activity_info)
     puts "LOGGING #{command}"
+  end
+
+  def log_network
+    network_info = {
+      Data_Transmitted: {
+        timestamp: current_time,
+        username: $username.to_s,
+        destination: 'http://127.0.0.1:9393/log',
+        source: 'localhost:9393',
+        amount_of_data: "#{File.size('Log.json')} bytes",
+        protocol: 'http/1.1',
+        process_name: 'ruby',
+        process_command_line: $command.to_s,
+        process_id: $id
+      }
+    }
+    $log.puts JSON.generate(network_info)
+    puts 'LOGGING Network Data'
+  end
+
+  # TRANSMIT DATA
+  def transmit
+    log_network
+    # Thread.new { `shotgun` }
+    $log.flush
   end
 end
