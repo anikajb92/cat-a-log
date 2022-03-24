@@ -11,7 +11,7 @@ class File_Processor
   end
 
   # GLOBAL VARIABLES
-  $username = `whoami`.chomp! # bash command works here + removing new line
+  $username = `whoami`.chomp! # works in unix and linux
   $absolute_path = File.realdirpath('Cats.txt')
   $log = File.open('Log.json', 'a+')
   $id = Process.pid
@@ -104,7 +104,7 @@ class File_Processor
   # TRANSMIT DATA
   def transmit
     log_network
-    # Thread.new { `shotgun` }
+    Thread.new { `shotgun` }
     $log.flush
   end
 end
