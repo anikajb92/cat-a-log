@@ -6,8 +6,8 @@ class File_Processor
     sleep 2 # wait 2 seconds
     modify_file
     sleep 2 # wait 2 more seconds
-    delete_file
-    transmit
+    # delete_file
+    # transmit
   end
 
   # GLOBAL VARIABLES
@@ -38,7 +38,13 @@ class File_Processor
 
   def modify_file
     puts 'modifying file'
-    File.write('Cats.txt', "You've got to be kitten me", mode: 'a')
+    puns = [
+      "You've got to be kitten me",
+      'This looks fur-miliar',
+      "I'm feline good today",
+      'This is Paw-sitively the best update ever'
+    ]
+    File.write('Cats.txt', puns.sample(1), mode: 'a')
     # Ruby method capturing true file modification time rather than method run timestamp
     mod_time = File.mtime('Cats.txt').strftime('%m-%d-%Y %H:%M:%S')
     puts 'MODIFIED Cats.txt'
