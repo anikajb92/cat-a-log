@@ -6,8 +6,8 @@ class File_Processor
     sleep 2 # wait 2 seconds
     modify_file
     sleep 2 # wait 2 more seconds
-    # delete_file
-    # transmit
+    delete_file
+    transmit
   end
 
   # GLOBAL VARIABLES
@@ -110,7 +110,7 @@ class File_Processor
   # TRANSMIT DATA
   def transmit
     log_network
-    Thread.new { `shotgun` }
     $log.flush
+    Thread.new { `shotgun` }
   end
 end
