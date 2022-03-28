@@ -112,6 +112,6 @@ class File_Processor
   def transmit
     log_network
     $log.flush
-    Thread.new { `shotgun` }
+    `shotgun`
   end
 end
