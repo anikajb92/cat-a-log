@@ -2,10 +2,12 @@ class File_Processor
   def run_process
     puts 'Running file processor'
     log_process
-    create_file
-    sleep 2 # wait 2 seconds
-    modify_file
-    sleep 2 # wait 2 more seconds
+    3.times do
+      create_file
+      sleep 2 # wait 2 seconds
+      modify_file
+      sleep 2 # wait 2 more seconds
+    end
     delete_file
     transmit
   end
@@ -25,15 +27,14 @@ class File_Processor
   def create_file
     if File.exist?('Cats.txt')
       puts 'Cats.txt file found...'
-      birth_time = File.birthtime('Cats.txt').strftime('%m-%d-%Y %H:%M:%S')
     else
       puts 'creating file'
       cat_file = File.open('Cats.txt', 'a+')
       # Birthtime capturing the very first creation of file, regardless of how many times the program is run
       birth_time = File.birthtime('Cats.txt').strftime('%m-%d-%Y %H:%M:%S')
       puts 'CREATED Cats.txt'
+      log_activity('create_file', birth_time)
     end
-    log_activity('create_file', birth_time)
   end
 
   def modify_file
