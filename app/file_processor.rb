@@ -112,6 +112,6 @@ class File_Processor
   def transmit
     log_network
     $log.flush
-    `shotgun`
+    `shotgun` # runs WEBrick server
   end
 end
