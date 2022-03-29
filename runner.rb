@@ -24,9 +24,16 @@ end
 
 def initiate
   system('clear')
-  puts 'Welcome to Cat-A-Log'
+  puts '
+  WELCOME TO CAT-A-LOG
+  '
   puts $kitty
-  consent = prompt.yes?('Would you like to run this program now?')
+  consent = prompt.yes?('
+  This program will create, update, and delete a file in
+  the current project folder. Upon completion, you will
+  be able to see an activity log.
+
+  Would you like to run this program now?')
 
   if consent
     $process.run_process
