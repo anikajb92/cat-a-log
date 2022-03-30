@@ -1,13 +1,13 @@
 source 'https://rubygems.org'
 
+gem 'activerecord', '~> 5.2'
 gem 'pry'
 gem 'rack'
-gem 'rack-test'
-gem 'rspec'
 gem 'rack-cors'
+gem 'rack-test'
+gem 'require_all'
+gem 'rspec'
 gem 'shotgun'
-gem "require_all"
-gem "activerecord", "~> 5.2"
-gem "sinatra-activerecord"
-gem "sqlite3"
-gem "tty-prompt", "~> 0.23.1"
+gem 'sinatra-activerecord'
+gem 'sqlite3'
+gem 'tty-prompt', '~> 0.23.1'
