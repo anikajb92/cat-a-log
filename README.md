@@ -1,6 +1,6 @@
 # CAT-A-LOG
 
-Malware is a constantly evolving threat. This means detection and response agents need to be proactive and accurate...so how do we ensure these protective softwares are working properly?
+Cyberattacks are a constantly evolving threat. This means detection needs to be accurate and response agents need to be proactive... so how do we ensure these protective softwares are working properly?
 <br/>
 That's where Cat-A-Log comes in! Cat-A-Log is an application that offers comparative test data for EDR software...with a fun twist. 
 <br/>
@@ -37,7 +37,7 @@ Would you like to run this program now? (Y/n)
 ```
 Typing ```Y``` or ```Yes``` will launch the program. Once the program has completed its tasks, a log will be available for viewing online. Open your web browser and go to:
 
-```http
+```
 http://127.0.0.1:9393/log
 ```
 
@@ -47,7 +47,7 @@ This is a Ruby application with [Rack middleware](https://guides.rubyonrails.org
 ## Future 
 
 If I were to expand this app, I would implement the following:
-1. More dynamic variables: methods to accept arguments and values from the device, rather than hard-coded params. 
+1. More dynamic variables: methods to accept arguments and values from the device, rather than hard-coded params (e.g. Server session ID, amount of data sent) 
 2. A frontend with a simple "Start" button that would run the program and return the log as a downloadable file.
-3. An internal server call that would send the log.json file without requiring a request from the browser
-4. Run several different types of modifications to the test file
+3. An internal server call that would send the Log.json file without requiring a request from the browser (possibly with sockets)
+4. Run several different types of modifications to the test file (i.e. type, name, password)
